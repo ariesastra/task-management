@@ -41,7 +41,6 @@ export class TaskService {
   updateTaskById(id: string, status: TaskStatus): UpdateTaskReturn {
     let result: UpdateTaskReturn = new UpdateTaskReturn();
     let getTaskById: Task = this.getTaskById(id);
-    console.log(status);
 
     if (getTaskById) {
       getTaskById.status = status;
